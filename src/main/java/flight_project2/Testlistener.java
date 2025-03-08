@@ -44,7 +44,7 @@ public class Testlistener implements ITestListener {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File Source = ts.getScreenshotAs(OutputType.FILE);
         File Destination = new File(
-                "C:\\Users\\amolb\\IJ_Workspace\\FlightAmazon\\target\\surefire-reports\\Screenshot\\Test-" + result.getName() + "_" +driver.getClass().getSimpleName() + ".png");
+                "C:\\Users\\amolb\\IJ_Workspace\\FlightAmazon\\target\\Screenshot\\Test-" + result.getName() + "_" +driver.getClass().getSimpleName() + ".png");
 
         try {
             FileHandler.copy(Source, Destination);
