@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteParallelAll]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="flight_project2.TC07_Seatbooking">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="quit"/>
+          <include name="seatbook"/>
+        </methods>
+      </class> <!-- flight_project2.TC07_Seatbooking -->
+      <class name="flight_project2.TC13_Payment">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="quit"/>
+          <include name="paymentCrditdeatils"/>
+        </methods>
+      </class> <!-- flight_project2.TC13_Payment -->
+      <class name="flight_project2.TC06_Multicity">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="multicity"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- flight_project2.TC06_Multicity -->
+      <class name="flight_project2.TC09_VerifyResultPage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="quit"/>
+          <include name="verification"/>
+        </methods>
+      </class> <!-- flight_project2.TC09_VerifyResultPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SuiteParallelAll] -->
